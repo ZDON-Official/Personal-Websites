@@ -10,6 +10,11 @@
   --dark_accent: #a47acb;
   --dark_shades: #305256;
   --dark_shades: #763a3a;
+
+  /** For shadows */
+
+  --box_shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -126,7 +131,8 @@ a:hover {
   justify-content: center;
   border-radius: 0.4em;
 
-  box-shadow: 0px 0em 0.6em rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 0em 0.6em rgba(0, 0, 0, 0.5); */
+  box-shadow: var(--box_shadow);
   /* box-shadow: 0px 0em 3em hsla(var(--main_color), 1); */
 }
 
