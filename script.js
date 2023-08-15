@@ -34,8 +34,8 @@ darkMode_Toggle.addEventListener("click", () => {
     // console.log("dark mode on");
     darkMode_off = true;
 
-    document.documentElement.style.setProperty("--background_color", "#121026");
-    document.documentElement.style.setProperty("--secondary_color", "#178582");
+    document.documentElement.style.setProperty("--background_color", "#181f28");
+    document.documentElement.style.setProperty("--secondary_color", "#819fbf");
 
     darkMode_Toggle.innerHTML = "Light Mode";
 
@@ -51,7 +51,6 @@ darkMode_Toggle.addEventListener("click", () => {
     localStorage.setItem("dark-mode", "light");
 
     darkMode_Toggle.innerHTML = "Dark Mode";
-
 
     darkMode_off = false;
   }
