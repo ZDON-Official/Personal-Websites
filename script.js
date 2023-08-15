@@ -37,6 +37,8 @@ darkMode_Toggle.addEventListener("click", () => {
     document.documentElement.style.setProperty("--background_color", "#121026");
     document.documentElement.style.setProperty("--secondary_color", "#178582");
 
+    darkMode_Toggle.innerHTML = "Light Mode";
+
     // document.body.classList.add("dark");
     localStorage.setItem("dark-mode", "dark");
   } else {
@@ -47,6 +49,9 @@ darkMode_Toggle.addEventListener("click", () => {
 
     // document.body.classList.remove("dark");
     localStorage.setItem("dark-mode", "light");
+
+    darkMode_Toggle.innerHTML = "Dark Mode";
+
 
     darkMode_off = false;
   }
