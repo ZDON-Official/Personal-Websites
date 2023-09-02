@@ -55,3 +55,26 @@ darkMode_Toggle.addEventListener("click", () => {
     darkMode_off = false;
   }
 });
+
+// ! this is for the hamnburger menu
+
+const hamburger = document.querySelector(".hmbr_menu");
+const navMenu = document.querySelector(".header_links");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelector(".nav_item");
+
+navLink.array.forEach((element) =>
+  element.addEventListener("click", closeMenu)
+);
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
