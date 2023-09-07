@@ -239,6 +239,7 @@ a:hover {
   border-radius: 4px;
   width: 90%;
   max-height: 40% ;
+  box-shadow: var(--box_shadow);
 
   /* border: 1px solid black; */
 }
@@ -274,6 +275,8 @@ a:hover {
   padding: 0%;
   /* border: 2px solid red; */
   width: 90%;
+  display: flex;
+  gap: 5px;
   font-size: 14px;
 }
 
