@@ -111,9 +111,7 @@ a:hover {
   align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
-  width: 100vw;
-
-  /* border: 2px solid black; */
+  width: 90vw;
 }
 
 .info_box {
@@ -140,15 +138,15 @@ a:hover {
 
 .profile_img {
   /* border: 2px solid var(--main_color); */
-  width: 40vw;
-  /* height: 350px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .profile_img img{
-  width: 100%;
+  width: auto;
+  max-height: 60vh;
+
   border-radius: 8px;
   box-shadow: var(--box_shadow);
 }
