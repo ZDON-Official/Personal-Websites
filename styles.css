@@ -7,6 +7,8 @@
   /* 178582 */
 
   --background_color: #ffffff;
+  --background_color_depth: transparent;
+  /* --background_color_depth: #1d2630; */
   /* --background_color: #1d2b34; */
   /* --background_color: #181f28; */
 
@@ -132,22 +134,23 @@ a:hover {
 .info {
   margin: 0%;
   padding: 0%;
+  font-size: 16px;
+  color: var(--text_color);
 }
 
 .profile_img {
   /* border: 2px solid var(--main_color); */
   width: 40vw;
-  height: 350px;
+  /* height: 350px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+}
 
-  /* box-shadow: 0px 0em 0.6em rgba(0, 0, 0, 0.5); */
+.profile_img img{
+  width: 100%;
+  border-radius: 8px;
   box-shadow: var(--box_shadow);
-  /* box-shadow: 0px 0em 3em hsla(var(--main_color), 1); */
-
-  /* background-color: #1f2834; */
 }
 
 .socials {
@@ -220,6 +223,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--background_color_depth);
 
   border-radius: 8px;
   box-shadow: var(--box_shadow);

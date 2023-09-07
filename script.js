@@ -15,8 +15,16 @@ if (localStorage.getItem("dark-mode") == "dark") {
   // if the above is 'dark' then apply .dark to the body
   // document.body.classList.add("dark");
 
-  document.documentElement.style.setProperty("--BG", "rgb(33, 36, 53)");
-  document.documentElement.style.setProperty("--dark_shades", "#05383f");
+  document.documentElement.style.setProperty("--background_color", "#181f28");
+  document.documentElement.style.setProperty(
+    "--background_color_depth",
+    "#1d2630"
+  );
+  document.documentElement.style.setProperty("--secondary_color", "#819fbf");
+  document.documentElement.style.setProperty(
+    "--text_color",
+    "rgba(255, 255, 255, 0.87)"
+  );
 
   //! hide the 'dark' button
   // $('.dark-button').hide();
@@ -35,7 +43,15 @@ darkMode_Toggle.addEventListener("click", () => {
     darkMode_off = true;
 
     document.documentElement.style.setProperty("--background_color", "#181f28");
+    document.documentElement.style.setProperty(
+      "--background_color_depth",
+      "#1d2630"
+    );
     document.documentElement.style.setProperty("--secondary_color", "#819fbf");
+    document.documentElement.style.setProperty(
+      "--text_color",
+      "rgba(255, 255, 255, 0.87)"
+    );
 
     darkMode_Toggle.innerHTML = "Light Mode";
 
@@ -45,7 +61,12 @@ darkMode_Toggle.addEventListener("click", () => {
     // console.log("dark mode off");
 
     document.documentElement.style.setProperty("--background_color", "#e9eef1");
+    document.documentElement.style.setProperty(
+      "--background_color_depth",
+      "transparent"
+    );
     document.documentElement.style.setProperty("--secondary_color", "#763a3a");
+    document.documentElement.style.setProperty("--text_color", "#333333");
 
     // document.body.classList.remove("dark");
     localStorage.setItem("dark-mode", "light");
