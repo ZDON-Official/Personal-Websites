@@ -6,14 +6,11 @@
   /* --secondary_color: #819fbf; */
   /* 178582 */
 
-  --background_color: #e9eef1;
+  --background_color: #ffffff;
   /* --background_color: #1d2b34; */
   /* --background_color: #181f28; */
 
-  --dark_accent: #a47acb;
-  --dark_shades: #305256;
-  --dark_shades: #763a3a;
-
+  --text_color: #333333;
   /** For shadows */
 
   --box_shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
@@ -200,3 +197,85 @@ a:hover {
     cursor: pointer;
   }
 }
+
+
+
+/* For the project page */
+
+.project_container{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 90vh;
+  /* border: 2px solid red; */
+}
+
+.project_container h1{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* TODO - make this display: grid */
+.project_box{
+  margin: 0%;
+  padding: 0%;
+  width: 90vw;
+  /* border: solid red; */
+}
+
+.prj{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 5px 0px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 8px;
+  box-shadow: var(--box_shadow);
+
+  /* border: solid red; */
+}
+
+.prj h2{
+  margin: 0%;
+  padding: 0%;
+  color: var(--secondary_color);
+}
+
+.prj img{
+  border-radius: 4px;
+  width: 90%;
+  min-height: 40% ;
+  border: 1px solid black;
+}
+
+.prj p{
+  margin: 0%;
+  padding: 0px;
+  width: 90%;
+  color: var(--text_color);
+}
+
+.prj_gtb_btn{
+  background-color: transparent;
+  color: var(--secondary_color);
+  border: 2px solid var(--secondary_color);
+  border-radius: 4px;
+  width: 50%;
+}
+
+.prj_gtb_btn:hover{
+  cursor: pointer;
+  background-color: var(--secondary_color);
+  color: #ffffff;
+}
+
