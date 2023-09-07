@@ -231,7 +231,7 @@ a:hover {
 .prj{
   box-sizing: border-box;
   margin: 0%;
-  padding: 5px 0px;
+  padding: 10px 0px;
   width: 300px;
   height: 400px;
   display: flex;
@@ -248,6 +248,8 @@ a:hover {
 .prj h2{
   margin: 0%;
   padding: 0%;
+  font-size: 24px;
+  font-weight: 500;
   color: var(--secondary_color);
 }
 
@@ -262,7 +264,9 @@ a:hover {
   margin: 0%;
   padding: 0px;
   width: 90%;
+  height: 30%;
   color: var(--text_color);
+  font-size: 14px;
 }
 
 .prj_gtb_btn{
@@ -271,6 +275,8 @@ a:hover {
   border: 2px solid var(--secondary_color);
   border-radius: 4px;
   width: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 .prj_gtb_btn:hover{
@@ -279,3 +285,21 @@ a:hover {
   color: #ffffff;
 }
 
+.skills{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  /* border: 2px solid red; */
+  width: 90%;
+  font-size: 14px;
+}
+
+.skills span{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--secondary_color);
+  color: var(--secondary_color);
+
+}
