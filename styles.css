@@ -197,17 +197,16 @@ a:hover {
 /* TODO - make this display: grid */
 #project_box{
   margin: 0%;
-  padding: 0%;
-  width: 95vw;
+  padding: 0% 20px;
+  width: 100%;
   box-sizing: border-box;
-  /* border: solid red; */
   text-decoration: none;
-
   display: grid;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   gap: 2em;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  /* border: solid red; */
 }
 
 .prj{

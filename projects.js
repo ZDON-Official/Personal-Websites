@@ -10,21 +10,21 @@ const project_list = `[
         "title" : "Processor Simulator",
         "info"  : "This project is a computer simulation which uses logisim to simulate a working processor and other I/O devices, This was implemented by Zohaib and Ying.",
         "image" : "/Assets/Processor.jpeg",
-        "skills" : ["HTML", "CSS", "Javascript"],
+        "skills" : ["Logisim"],
         "link"  : "https://github.com/ZDON-Official/Processor-Simulator"
     },
     {
         "title" : "MIPS Assembler",
         "info"  : "This project converts MIPS instructions into binary to be used by a processor simulator. The project is implemented in C++.",
         "image" : "/Assets/mips_assembler.jpeg",
-        "skills" : ["HTML", "CSS", "Javascript"],
+        "skills" : ["C++", "Mips"],
         "link"  : "https://github.com/ZDON-Official/MIPS-Assembler"
     },
     {
         "title" : "Ultimate Tic-Tac-Toe",
         "info"  : "This project is an implementation of Ultimate Tic-Tac-Toe in Python. This game utilizes the Pygame Python library to implement music and visuals.",
         "image" : "/Assets/ultimate.jpeg",
-        "skills" : ["HTML", "CSS", "Javascript"],
+        "skills" : ["Python", "Pygame"],
         "link"  : "https://github.com/ZDON-Official/UltimateTicTacToe"
     },
     {
@@ -38,7 +38,7 @@ const project_list = `[
         "title" : "Discord Invest",
         "info"  : "Final submission for GryphHacks 2022. The goal of this project was to create a mock trading Discord bot.",
         "image" : "/Assets/DInvestLogo.jpeg",
-        "skills" : ["HTML", "CSS", "Javascript"],
+        "skills" : ["Python", "FinnhubApi", "CockroachDB"],
         "link"  : "https://github.com/ZDON-Official/DiscordInvest"
     },
     {
@@ -52,7 +52,7 @@ const project_list = `[
         "title" : "ODIN Landing Page",
         "info"  : "Implementation of a website landing page template, for ODIN Project, using HTML and CSS.",
         "image" : "/Assets/ODIN_Landing_page.jpeg",
-        "skills" : ["HTML", "CSS", "Javascript"],
+        "skills" : ["HTML", "CSS"],
         "link"  : "https://github.com/ZDON-Official/Odin-Landing-Page"
     },
     {
