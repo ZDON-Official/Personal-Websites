@@ -9,9 +9,17 @@ if (localStorage.getItem("dark-mode")) {
   darkMode = "light";
 }
 
-localStorage.setItem("dark-mode", darkMode);
+if (localStorage.getItem("darkMode_toggle")) {
+  darkMode_off = JSON.parse(localStorage.getItem("darkMode_toggle"));
+} else {
+  console.log("dark mode is off");
+  darkMode_off = false;
+}
 
-if (localStorage.getItem("dark-mode") == "dark") {
+localStorage.setItem("dark-mode", darkMode);
+localStorage.setItem("darkMode_toggle", darkMode_off);
+
+if (localStorage.getItem("dark-mode") === "dark") {
   // if the above is 'dark' then apply .dark to the body
   // document.body.classList.add("dark");
 
@@ -26,11 +34,7 @@ if (localStorage.getItem("dark-mode") == "dark") {
     "rgba(255, 255, 255, 0.87)"
   );
 
-  //! hide the 'dark' button
-  // $('.dark-button').hide();
-
-  //! show the 'light' button
-  // $('.light-button').show();
+  darkMode_Toggle.innerHTML = "Light Mode";
 }
 
 // Toggle dark UI
@@ -55,8 +59,8 @@ darkMode_Toggle.addEventListener("click", () => {
 
     darkMode_Toggle.innerHTML = "Light Mode";
 
-    // document.body.classList.add("dark");
     localStorage.setItem("dark-mode", "dark");
+    localStorage.setItem("darkMode_toggle", darkMode_off);
   } else {
     // console.log("dark mode off");
 
@@ -68,16 +72,15 @@ darkMode_Toggle.addEventListener("click", () => {
     document.documentElement.style.setProperty("--secondary_color", "#763a3a");
     document.documentElement.style.setProperty("--text_color", "#333333");
 
-    // document.body.classList.remove("dark");
-    localStorage.setItem("dark-mode", "light");
-
     darkMode_Toggle.innerHTML = "Dark Mode";
 
     darkMode_off = false;
+    localStorage.setItem("dark-mode", "light");
+    localStorage.setItem("darkMode_toggle", darkMode_off);
   }
 });
 
-// ! this is for the hamnburger menu
+// ! this is for the hamburger menu
 
 const hamburger = document.querySelector(".hmbr_menu");
 const navMenu = document.querySelector(".header_links");

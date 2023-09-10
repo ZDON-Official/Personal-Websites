@@ -98,8 +98,8 @@ function loadResources(jsonItem) {
       }
 
       let content = `
-            <h2>${jsList[i].title}</h2>
             <img src="${jsList[i].image}" alt="${jsList[i].title}" />
+            <h2>${jsList[i].title}</h2>
             <div class="skills">
                 ${skills}
             </div>

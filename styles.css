@@ -6,6 +6,7 @@
   /* --secondary_color: #819fbf; */
   /* 178582 */
 
+  /* --background_color: #262626; */
   --background_color: #ffffff;
   --background_color_depth: transparent;
   /* --background_color_depth: #1d2630; */
@@ -13,6 +14,7 @@
   /* --background_color: #181f28; */
 
   --text_color: #333333;
+  /* --text_color: #ffffffbd; */
   /** For shadows */
 
   --box_shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
@@ -145,7 +147,7 @@ a:hover {
 
 .profile_img img{
   width: auto;
-  max-height: 60vh;
+  max-height: 50vh;
 
   border-radius: 8px;
   box-shadow: var(--box_shadow);
@@ -173,7 +175,11 @@ a:hover {
 
 
 
-/* For the project page */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/*!                                      For the project page                                                         */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
 
 .project_container{
   margin: 0%;
@@ -214,7 +220,7 @@ a:hover {
   text-decoration: none;
   box-sizing: border-box;
   margin: 0%;
-  padding: 10px 0px;
+  padding: 0 0 10px 0px;
   width: 400px;
   height: 500px;
   display: flex;
@@ -225,6 +231,9 @@ a:hover {
 
   border-radius: 8px;
   box-shadow: var(--box_shadow);
+
+
+  /* border: 1px solid red; */
 
 }
 
@@ -237,12 +246,14 @@ a:hover {
 }
 
 .prj img{
-  border-radius: 4px;
-  width: 90%;
-  max-height: 40% ;
-  box-shadow: var(--box_shadow);
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  max-height: 50% ;
+  /* box-shadow: var(--box_shadow); */
+  margin-top: 0%;
+  object-fit: fill;
 
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
 }
 
 .prj p{
