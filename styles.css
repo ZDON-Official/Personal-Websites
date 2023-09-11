@@ -42,6 +42,10 @@ body {
   overflow-x: hidden;
 }
 
+body *{
+  /* line-height: 25px; */
+}
+
 /*! HEADER STUFF */
 
 .header {
@@ -109,33 +113,48 @@ a:hover {
 .main_text {
   display: flex;
   margin: 0;
-  padding: 0 3em 0 3em;
+  padding: 0;
   align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
   width: 90vw;
+
+
 }
 
 .info_box {
-  width: 40vw;
+  margin: 0;
+  padding: 0;
+  width: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  line-height: 20px;
+
+  /* border: 2px solid red; */
+
 }
 
 .info_box h1 {
   text-align: left;
   margin: 0;
   padding: 0;
+  /* padding-bottom: 20px; */
   width: 100%;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 .info {
   margin: 0%;
   padding: 0%;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: regular;
   color: var(--text_color);
+
+  /* border: 2px solid red; */
+
 }
 
 .profile_img {
@@ -158,19 +177,36 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
+
 }
 
-.socials a {
-  font-size: 1.8em;
+
+
+.socials button {
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+  height: 45px;
+  width: 120px;
+  border: 2px solid var(--main_color);
+}
+
+.socials button:hover {
+  cursor: pointer;
+  /* color: var(--secondary_color); */
+  text-decoration: none;
+}
+
+.main_button{
+  background-color: var(--main_color);
+  color: var(--background_color);
+}
+
+.sec_button{
   color: var(--main_color);
+
 }
-
-.socials a:hover {
-  color: var(--secondary_color);
-}
-
-
 
 
 
