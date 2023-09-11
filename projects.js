@@ -101,10 +101,12 @@ function loadResources(jsonItem) {
             <img src="${jsList[i].image}" alt="${jsList[i].title}" />
             <h2>${jsList[i].title}</h2>
             <div class="skills">
+                Skills:
                 ${skills}
             </div>
+            <hr>
             <p>${jsList[i].info}</p>
-            <button class="prj_gtb_btn">Github</button>
+            <button class="prj_gtb_btn" onClick="window.location.href='${jsList[i].link}'" >View on Github</button>
         `;
       child.innerHTML = content;
       parent.appendChild(child);
