@@ -1,19 +1,24 @@
 :root {
-  --main_color: #bfa181;
+  --main_color: #9e5ac8;
+  /* --main_color: #bfa181; */
+
   /* --secondary_color: rgb(55, 194, 180); */
   /* --secondary_color: #178582; */
-  --secondary_color: #763a3a;
+  /* --secondary_color: #763a3a; */
+  /* --secondary_color: #9e7676; */
+  --secondary_color: #bfa181;
   /* --secondary_color: #819fbf; */
   /* 178582 */
 
   /* --background_color: #262626; */
-  --background_color: #ffffff;
+  /* --background_color: #faf7f4; */
+  --background_color: hsl(277, 50%, 96%);
   --background_color_depth: transparent;
   /* --background_color_depth: #1d2630; */
   /* --background_color: #1d2b34; */
   /* --background_color: #181f28; */
 
-  --text_color: #333333;
+  --text_color: #404040e7;
   /* --text_color: #ffffffbd; */
   /** For shadows */
 
@@ -60,6 +65,16 @@ body *{
   width: 100vw;
   max-width: 100vw;
   /* border: 2px solid red; */
+}
+
+.name_title *{
+  margin: 0;
+  padding: 0%;
+}
+
+.name_title h4{
+  color: var(--text_color);
+  font-size: 12px;
 }
 
 .header_links {
@@ -158,7 +173,9 @@ a:hover {
 }
 
 .profile_img {
-  /* border: 2px solid var(--main_color); */
+  border: 2px solid var(--main_color);
+  width: 400px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
