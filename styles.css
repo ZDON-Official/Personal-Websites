@@ -74,6 +74,7 @@ body *{
 
 .name_title h4{
   color: var(--text_color);
+  opacity: 80%;
   font-size: 12px;
 }
 
