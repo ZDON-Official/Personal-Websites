@@ -1,18 +1,21 @@
 :root {
-  --main_color: #9e5ac8;
+  --primary_color: hsl(277, 50%, 57%);
+  /* --primary_color: hsl(278, 78%, 85%); */
   /* --main_color: #bfa181; */
 
   /* --secondary_color: rgb(55, 194, 180); */
   /* --secondary_color: #178582; */
   /* --secondary_color: #763a3a; */
-  /* --secondary_color: #9e7676; */
-  --secondary_color: #bfa181;
-  /* --secondary_color: #819fbf; */
+  --secondary_color: hsl(187, 50%, 45%);
+  /* --secondary_color: #bfa181; */
+  /* --secondary_color: hsl(200, 65%, 60%); */
   /* 178582 */
 
   /* --background_color: #262626; */
   /* --background_color: #faf7f4; */
   --background_color: hsl(277, 50%, 96%);
+  /* --background_color: hsl(277, 40%, 13%); */
+  /* --background_color: hsl(214, 25%, 13%); */
   --background_color_depth: transparent;
   /* --background_color_depth: #1d2630; */
   /* --background_color: #1d2b34; */
@@ -20,20 +23,24 @@
 
   --text_color: #404040e7;
   /* --text_color: #ffffffbd; */
+
+  /** Project tab */
+  --project_hover_text_color: #eeeeee;
+
   /** For shadows */
 
   --box_shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
     0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
 
-  --box_shadow_dark: 0.1px 0.2px 2.3px rgba(0, 0, 0, 0.22),
+  /* --box_shadow: 0.1px 0.2px 2.3px rgba(0, 0, 0, 0.22),
     1px 2.1px 4.9px rgba(0, 0, 0, 0.295), 2.8px 5.7px 8.9px rgba(0, 0, 0, 0.399),
-    4px 8px 25px rgba(0, 0, 0, 0.75);
+    4px 8px 25px rgba(0, 0, 0, 0.75); */
 }
 
 body {
   font-weight: light;
 
-  color: var(--main_color);
+  color: var(--primary_color);
   background-color: var(--background_color);
 
   display: flex;
@@ -73,9 +80,9 @@ body *{
 }
 
 .name_title h4{
-  color: var(--text_color);
-  opacity: 80%;
-  font-size: 12px;
+  color: var(--secondary_color);
+  /* opacity: 80%; */
+  font-size: 0.8em;
 }
 
 .header_links {
@@ -104,9 +111,9 @@ body *{
 
 .theme_switcher {
   /* background-color: var(--dark_accent); */
-  color: var(--main_color);
+  color: var(--primary_color);
   /* border-radius: 0.2em; */
-  border: 1px solid var(--main_color);
+  border: 1px solid var(--primary_color);
   background-color: transparent;
 
   /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75); */
@@ -123,7 +130,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: var(--main_color);
+  color: var(--primary_color);
 }
 
 .main_text {
@@ -133,8 +140,12 @@ a:hover {
   align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
-  width: 90vw;
+  min-width: 35vw;
+  max-width: 75vw;
+  max-height: 90vh;
+  min-height: 50vh;
 
+  /* border: 2px solid red; */
 
 }
 
@@ -148,18 +159,22 @@ a:hover {
   align-items: center;
   line-height: 20px;
 
-  /* border: 2px solid red; */
 
 }
 
 .info_box h1 {
-  text-align: left;
+  display: flex;
+  text-align: center;
   margin: 0;
   padding: 0;
   /* padding-bottom: 20px; */
   width: 100%;
+  height: auto;
   font-size: 3em;
+  line-height: 0.8em;
   font-weight: bold;
+
+
 }
 
 .info {
@@ -169,12 +184,11 @@ a:hover {
   font-weight: regular;
   color: var(--text_color);
 
-  /* border: 2px solid red; */
 
 }
 
 .profile_img {
-  border: 2px solid var(--main_color);
+  /* border: 2px solid var(--main_color); */
   width: 400px;
   height: 400px;
   display: flex;
@@ -194,19 +208,20 @@ a:hover {
   margin-top: 1em;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
+  gap: 3em;
+  width: 100%;
+
+  /* border: 2px solid red; */
 
 }
-
-
 
 .socials button {
   font-size: 18px;
   font-weight: 400;
   border-radius: 4px;
   height: 45px;
-  width: 120px;
+  min-width: 120px;
 }
 
 .socials button:hover {
@@ -217,7 +232,7 @@ a:hover {
 
 .main_button{
   border: none;
-  background-color: var(--main_color);
+  background-color: var(--primary_color);
   color: var(--background_color);
   transition: background-color 1s;
   /* outline: 2px solid var(--main_color); */
@@ -239,9 +254,9 @@ a:hover {
 }
 
 .sec_button{
-  color: var(--main_color);
+  color: var(--primary_color);
   background-color: transparent;
-  border: 2px solid var(--main_color);
+  border: 2px solid var(--primary_color);
   transition: 1s;
   /* transition: color 1s; */
 }
@@ -306,7 +321,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--background_color_depth);
+  /* background-color: var(--background_color_depth); */
 
   border-radius: 8px;
   box-shadow: var(--box_shadow);
@@ -369,7 +384,7 @@ a:hover {
 .prj_gtb_btn:hover{
   cursor: pointer;
   background-color: var(--secondary_color);
-  color: #ffffff;
+  color: var(--project_hover_text_color);
 }
 
 .skills{
@@ -392,7 +407,6 @@ a:hover {
   /* border-radius: 4px; */
   /* border: 1px solid var(--secondary_color); */
   color: var(--secondary_color);
-
 }
 
 
