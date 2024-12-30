@@ -48,10 +48,24 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100svh;
-  margin: 0;
+  width: 100%;
+  margin: 0%;
   padding: 0%;
 
   overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+  width: 0.15em;
+}
+
+::-webkit-scrollbar-track{
+  background: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--primary_color);
 }
 
 body *{
@@ -61,16 +75,14 @@ body *{
 /*! HEADER STUFF */
 
 .header {
-  margin: 0;
-  padding: 0 1em 0 1em;
-
   display: flex;
   align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
 
-  width: 100vw;
-  max-width: 100vw;
+  width: 90vw;
+  /* max-width: 90vw; */
+  max-height: 3.7em;
   /* border: 2px solid red; */
 }
 
