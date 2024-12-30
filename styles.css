@@ -188,7 +188,6 @@ a:hover {
 }
 
 .profile_img {
-  /* border: 2px solid var(--main_color); */
   width: 400px;
   height: 400px;
   display: flex;
@@ -197,10 +196,11 @@ a:hover {
 }
 
 .profile_img img{
+  border: 2px solid var(--primary_color);
   width: auto;
   max-height: 50vh;
 
-  border-radius: 8px;
+  border-radius: 25px;
   box-shadow: var(--box_shadow);
 }
 
