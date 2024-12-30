@@ -208,7 +208,6 @@ a:hover {
 }
 
 .profile_img img{
-  border: 2px solid var(--primary_color);
   width: auto;
   max-height: 50vh;
 
